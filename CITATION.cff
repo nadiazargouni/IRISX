@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >
+  If you use this code or the 2009-2019 correspondence table in your research,
+  please cite the associated paper.
+
+title: "IRISX 2009–2019: Stable Census Tract Units for Longitudinal Spatial Analysis in France"
+
+type: software
+
+authors:
+  - family-names: ZARGOUNI
+    given-names: NADIA
+    affiliation: ENSAE Paris
+
+license: MIT
+
+preferred-citation:
+  type: techreport
+  title: "IRISX 2009–2019: Stable Census Tract Units for Longitudinal Spatial Analysis in France"
+  authors:
+    - family-names: ZARGOUNI
+      given-names: NADIA
+  year: 2026
+  url: https://nadiazargouni.github.io/IRISX/
