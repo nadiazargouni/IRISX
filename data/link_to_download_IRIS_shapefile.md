@@ -6,7 +6,6 @@ The official IRIS datasets are distributed through the IGN GeoServices platform 
 - polygon geometries,
 - attribute tables containing IRIS identifiers and administrative information,
 - projection files (`.prj`) and metadata,
-- standardized delivery packages suitable for GIS and spatial analysis workflows.
 
 The full documentation and download options for IRIS products are available on the IGN website:  
 [https://geoservices.ign.fr/contoursiris](https://geoservices.ign.fr/contoursiris)
