@@ -2,7 +2,7 @@
 
 # README
 
-This repository reproduces the **IRISX outputs** for the period 2009–2019.  
+This repository reproduces the **IRISX outputs** for the period 2009–2019. It was initially constructed for Garrouste and Lafourcade (2025). 
 The **outputs** include:
 
 - `IRIS_historiques_IRISX.xlsx` is a historical table mapping each IRIS code (column `IRIS`) to its IRISX (column `irisx_id`), and to its year of creation (`annee_corresp_`). 
@@ -78,13 +78,15 @@ python build_irisx.py --help
 
 
 ## References
-- Lucie Adélaïde, Morgane Stempfelet, Coline Babut, Alexandre Bulté, Bérengère Ehrhart, et al.. HistorIRIS : table de passage des IRIS de 1999 à 2022. Commissariat Général au Développement durable (CGDD). 2023, pp.gd4h.ecologie.gouv.fr/defis. ⟨hal-04176155⟩. 
-- Behrens, K. and Martin, J. (2015). Concording large datasets over time: The C3 method. Unpublished paper.
+- Adélaïde, L., Stempfelet, M., Babut, C., Bulté, A., Ehrhart, B., and Jaccy, N. (2023). HistorIRIS: table de passage des IRIS de 1999 à 2022. *Technical report, Commissariat Général au Développement durable (CGDD)*.
+- Behrens, K. and Martin, J. (2015). Concording large datasets over time: The c3 method. *Unpublished paper*.
+- Garrouste, M. and Lafourcade, M. (2025). Place-based policies: A path to opportunity or a mark of stigma for targeted neighborhoods? *Journal of the European Economic Association*. Conditionally accepted. Revised version of CEPR Discussion Paper No. 17750.
 
 ## Contact 
 
 
 Nadia Zargouni, nadia.zargouni@ensae.fr
+
 
 
 
