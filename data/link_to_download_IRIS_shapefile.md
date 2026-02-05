@@ -1,6 +1,6 @@
 # Downloading IRIS shapefiles (France)
 
-In France, shapefiles of census blocks (*IRIS – Ilots Regroupés pour l’Information Statistique*) are produced and updated on a **yearly basis** by the **IGN (Institut national de l’information géographique et forestière)**, the national agency in charge of authoritative geospatial reference data. 
+In France, shapefiles of census tracts (*IRIS – Ilots Regroupés pour l’Information Statistique*) are produced and updated on a **yearly basis** by the **IGN (Institut national de l’information géographique et forestière)**, the national agency in charge of authoritative geospatial reference data. 
 
 The official IRIS datasets are distributed through the IGN GeoServices platform and include:
 - polygon geometries,
