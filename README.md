@@ -1,3 +1,5 @@
+**Paper**: [Click to read explanatory paper](https://github.com/nadiazargouni/IRISX/)
+
 # README
 
 This repository reproduces the **IRISX outputs** for the period 2009–2019.  
@@ -83,3 +85,4 @@ python build_irisx.py --help
 
 
 Nadia Zargouni, nadia.zargouni@ensae.fr
+
