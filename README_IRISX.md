@@ -39,7 +39,7 @@ Our algorithm also differs from that of Behrens and Martin (2015), as we do not 
 
 ## Installation
 
-0. **Local environment or cloud notebook?**  
+0. **Local or cloud environment?**  
    The script can be executed either:
    - Locally, using **Python 3.8 or higher** installed on your system.  
    - Or in any **cloud-based Python environment** such as **Google Colab**, **Kaggle Notebooks**, ... 
@@ -49,6 +49,7 @@ Our algorithm also differs from that of Behrens and Martin (2015), as we do not 
 ```bash
 pip install -r requirements.txt
 ```
+3. Download on [IGN website](https://geoservices.ign.fr/contoursiris) IRIS boundaries Shapefile for your reference year (here by default 2019). This step is extensively explained in `data/link_to_download_IRIS_shapefile.md`. 
 
 ## Running the script
 
@@ -79,5 +80,6 @@ python build_irisx.py --help
 - Behrens, K. and Martin, J. (2015). Concording large datasets over time: The C3 method. Unpublished paper.
 
 ## Contact 
+
 
 Nadia Zargouni, nadia.zargouni@ensae.fr
