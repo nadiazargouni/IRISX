@@ -1,4 +1,4 @@
-**Paper**: [Click to read explanatory paper](https://github.com/nadiazargouni/IRISX/)
+**Paper**: [Click to read explanatory paper](https://nadiazargouni.github.io/IRISX/)
 
 # README
 
@@ -85,4 +85,5 @@ python build_irisx.py --help
 
 
 Nadia Zargouni, nadia.zargouni@ensae.fr
+
 
