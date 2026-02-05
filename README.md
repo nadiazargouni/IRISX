@@ -35,7 +35,7 @@ Our algorithm also differs from that of Behrens and Martin (2015), as we do not 
 │ └─ IRISX20092019.zip # IRISX boundaries - EPSG:2154
 ├─ build_irisx.py # Main code to generate IRISX
 ├─ requirements.txt # List of dependencies
-└─ README_IRISX.md # documentation (you are here)
+└─ README.md # documentation (you are here)
 ```
 ---
 
@@ -85,5 +85,6 @@ python build_irisx.py --help
 
 
 Nadia Zargouni, nadia.zargouni@ensae.fr
+
 
 
