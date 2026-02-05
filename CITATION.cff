@@ -8,8 +8,8 @@ title: "IRISX 2009–2019: Stable Census Tract Units for Longitudinal Spatial An
 type: software
 
 authors:
-  - family-names: ZARGOUNI
-    given-names: NADIA
+  - family-names: Zargouni
+    given-names: Nadia
     affiliation: ENSAE Paris
 
 license: MIT
@@ -18,7 +18,7 @@ preferred-citation:
   type: techreport
   title: "IRISX 2009–2019: Stable Census Tract Units for Longitudinal Spatial Analysis in France"
   authors:
-    - family-names: ZARGOUNI
-      given-names: NADIA
+    - family-names: Zargouni
+      given-names: Nadia
   year: 2026
-  url: https://nadiazargouni.github.io/IRISX/
+  url: https://github.com/nadiazargouni/IRISX/
