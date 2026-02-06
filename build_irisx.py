@@ -2,9 +2,9 @@
 """
 build_irisx.py
 
-Single script to reproduce the IRISX replication package outputs described by the user:
-- IRIS_historiques_IRISX.xlsx (latest version produced by this pipeline)
-- IRISX20092019.zip (shapefile and associated files aggregating IRIS into permanent IRISX units for 2009-2019)
+Single script to reproduce the IRISX outputs described by the user:
+- IRIS_historiques_IRISX.xlsx (mapping IRIS|year -> IRISX)
+- IRISX{min IRIS cols}{max IRIS cols}.zip (shapefile and associated files aggregating IRIS into permanent IRISX units for the period of choice. Default = 2009-2019)
 
 This script is written to be robust to different folder layouts.
 See README.md for required filenames, processing of input data, and example usage.
@@ -51,7 +51,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(mes
 def add_leading_zeros(x):
     """
     Ensures that a value has 9 characters by adding leading zeros if needed.
-    IRIS are indexed by 9-digit codes = 5-digit INSEE municipality code + 4-digit IRIS-specific code.
+    IRIS are indexed by 9-digit codes = 5-digit Insee municipality code + 4-digit IRIS-specific code.
     """
     if pd.isna(x):
         return  np.nan
@@ -92,8 +92,6 @@ def build_table_irisx(table_passage):
     Build table_irisx with columns:
         - irisx_id: numeric id of connected component
         - iris_nodes: list of IRIS codes (as Python list string)
-
-    The CSV is written once, cleanly formatted.
     """
     logging.info("Starting IRISX table construction...")
     edges = edge_list_(table_passage)
@@ -118,7 +116,7 @@ def build_table_irisx(table_passage):
 def table_iris_historiques_irisx(table_passage, table_irisx,
                                   out_xlsx):
     """
-    IRIS–IRISX mapping builder with progress bar, 
+    IRIS–IRISX mapping builder (with progress bar) 
     to map IRIS (year-specific) to IRISX id
     """
 
@@ -158,7 +156,7 @@ def table_iris_historiques_irisx(table_passage, table_irisx,
 
 def find_irisx_in_df(table_passage, irisx):
     """
-    Find IRISX in correspondence table.
+    Helper function. Find IRISX in correspondence table.
     """
 
     example_connected_components = set(irisx)
@@ -169,7 +167,7 @@ def find_irisx_in_df(table_passage, irisx):
 
 def find_iris_in_df(table_passage, iris):
     """
-    Find IRISX in correspondence table.
+    Helper function. Find IRIS in correspondence table.
     """
     result = table_passage.isin([iris])
 
@@ -260,7 +258,8 @@ def merging_irisx_iris_year_ref(shpyear, dfyear, year_ref, out_shp):
 
 def zip_selected_files(folder_path, output_zip_file, file_criteria=None):
     """
-    Zips selected files from the folder based on the provided criteria.
+    Zips selected files from the folder based on the provided criteria (prefix).
+    See match_criteria below.
     """
     with zipfile.ZipFile(output_zip_file, 'w', zipfile.ZIP_DEFLATED, allowZip64=True) as zipf:
         for root, dirs, files in os.walk(folder_path):
@@ -287,7 +286,7 @@ def match_criteria(file, file_criteria):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build IRISX outputs (CSV of all modifications + shapefile)")
+    parser = argparse.ArgumentParser(description="Build IRISX outputs (CSV of all IRIS modifications + shapefile)")
     parser.add_argument('--passage-table', type=str, default='data/table_passage_2009_2019.csv',
                         help='CSV with passage table')
     parser.add_argument('--year-ref', type=str, default='2019',
@@ -295,7 +294,7 @@ def main():
     parser.add_argument('--contours-folder', type=str, default='data/CONTOURS-IRIS_2019.shp',
                         help='Zipped folder with IRIS contour shapefiles. ' \
                         'If cannot use geopandas on .shp, put data/CONTOURS-IRIS_2019.zip instead. ' \
-                        'If provided, shapefile IRISXYYYY.shp will be produced.')
+                        'If provided, shapefile IRISX{min iris-columns}{max iris-columns}.shp will be produced.')
     parser.add_argument('--out-dir', type=str, default='outputs', help='Output folder name')
     parser.add_argument('--iris-columns', nargs="+", type=int, default=range(2009,2020),
                         help='If provided, list column names (in order) to use as IRIS columns in the passage table. Example: 1990 1999 2009 2015 2019')
@@ -383,3 +382,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
