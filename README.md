@@ -84,8 +84,9 @@ python build_irisx.py --help
 
 ## Contact 
 
-
+The author acknowledges the support of the French Agence Nationale de la Recherche (ANR), under grant \href{https://anr.fr/Project-ANR-23-CE26-0001}{ANR-23-CE26-0001} (project URBOPP).
 Nadia Zargouni, nadia.zargouni@ensae.fr
+
 
 
 
