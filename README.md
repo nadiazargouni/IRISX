@@ -2,7 +2,13 @@
 
 # README
 
-This repository reproduces the **IRISX outputs** for the period 2009–2019. It was initially constructed for Garrouste and Lafourcade (2025). 
+# Motivation
+
+When working with longitudinal databases aggregated at a spatial level, such as census tracts, researchers face a recurring methodological challenge: the boundaries of these units often evolve over time due to demographic change, administrative reorganization, mergers, and splits. These shifting geographies complicate efforts to analyze temporal dynamics while controlling for time-invariant local characteristics through fixed effects. To address this issue, we develop a procedure to construct pseudo-census tracts that remain stable over time, defined as the minimum spatial units that can be consistently tracked across the period of interest. By harmonizing changing boundaries into a set of temporally stable units, researchers can estimate models with spatial fixed effects that credibly capture unobserved, time-invariant local factors, while preserving the finest possible spatial resolution. The Python tool presented here was initially developed for two research projects aiming at assessing the evolution of urban segregation patterns across French neighborhoods: the ANR project “Urban Neighborhoods and Economic Opportunities,” ( [ANR-23-CE26-0001](https://anr.fr/Project-ANR-23-CE26-0001), PI: Gabrielle Fack & Miren Lafourcade) and the project "Place-Based Policies: A Path to Opportunity or a Mark of Stigma for Targeted Neighborhoods?" (PI: Manon Garrouste & Miren Lafourcade). The code is however intended to be an open source tool for other scholars studying the dynamics of spatially aggregated outcomes over time, and the input data can be reused for studies in the French context. 
+
+In the French statistical system, an IRIS (*Îlots Regroupés pour l’Information Statistique*) is the smallest administrative geographical unit used by Institut national de la statistique et des études économiques (Insee) for disseminating census data in municipalities with more than 10,000 inhabitants. IRIS typically contains around 2,000 residents, and they serve as the basic building blocks for analyzing demographic, social, and economic patterns at a fine spatial scale in France.
+
+This tool builds pseudo-IRIS subsets (further called **IRISX**) that are stable across time, by default for the period 2009–2019. It was initially constructed for Garrouste and Lafourcade (2025). 
 The **outputs** include:
 
 - `IRIS_historiques_IRISX.xlsx` is a historical table mapping each IRIS code (column `IRIS`) to its IRISX (column `irisx_id`), and to its year of creation (`annee_corresp_`). 
@@ -84,8 +90,9 @@ python build_irisx.py --help
 
 ## Contact 
 
-The author acknowledges the support of the French Agence Nationale de la Recherche (ANR), under grant [ANR-23-CE26-0001](https://anr.fr/Project-ANR-23-CE26-0001) (project URBOPP).
+The corresponding author acknowledges the support of the French Agence Nationale de la Recherche (ANR), under grant [ANR-23-CE26-0001](https://anr.fr/Project-ANR-23-CE26-0001) (project URBOPP).
 Nadia Zargouni, nadia.zargouni@ensae.fr
+
 
 
 
