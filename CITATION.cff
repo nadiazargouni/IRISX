@@ -8,9 +8,15 @@ title: "IRISX 2009–2019: Stable Census Tract Units for Longitudinal Spatial An
 type: software
 
 authors:
-  - family-names: Zargouni
-    given-names: Nadia
-    affiliation: HEC Paris and ENSAE Paris
+  - family-names: "Zargouni"
+    given-names: "Nadia"
+    affiliation: "HEC Paris and ENSAE Paris"
+  - family-names: "Garrouste"
+    given-names: "Manon"
+    affiliation: "Université Paris-Saclay (RITM)"
+  - family-names: "Lafourcade"
+    given-names: "Miren"
+    affiliation: "Université Paris-Saclay (RITM), Paris School of Economics and CEPR"
 
 license: MIT
 
@@ -18,14 +24,14 @@ preferred-citation:
   type: techreport
   title: "IRISX 2009–2019: Stable Census Tract Units for Longitudinal Spatial Analysis in France"
   authors:
-    - family-names: Zargouni
-      given-names: Nadia
-    affiliation: HEC Paris and ENSAE Paris
-    - family-names: Garrouste
-      given-names: Manon
-      affiliation: Université Paris-Saclay (RITM)
-    - family-names: Lafourcade
-      given-names: Miren
-      affiliation: Université Paris-Saclay (RITM), Paris School of Economics and CEPR
+    - family-names: "Zargouni"
+      given-names: "Nadia"
+      affiliation: "HEC Paris and ENSAE Paris"
+    - family-names: "Garrouste"
+      given-names: "Manon"
+      affiliation: "Université Paris-Saclay (RITM)"
+    - family-names: "Lafourcade"
+      given-names: "Miren"
+      affiliation: "Université Paris-Saclay (RITM), Paris School of Economics and CEPR"
   year: 2026
   url: https://github.com/nadiazargouni/IRISX/
