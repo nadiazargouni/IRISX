@@ -10,7 +10,7 @@ type: software
 authors:
   - family-names: Zargouni
     given-names: Nadia
-    affiliation: ENSAE Paris
+    affiliation: HEC Paris and ENSAE Paris
 
 license: MIT
 
@@ -20,5 +20,12 @@ preferred-citation:
   authors:
     - family-names: Zargouni
       given-names: Nadia
+    affiliation: HEC Paris and ENSAE Paris
+    - family-names: Garrouste
+      given-names: Manon
+      affiliation: Université Paris-Saclay (RITM)
+    - family-names: Lafourcade
+      given-names: Miren
+      affiliation: Université Paris-Saclay (RITM), Paris School of Economics and CEPR
   year: 2026
   url: https://github.com/nadiazargouni/IRISX/
